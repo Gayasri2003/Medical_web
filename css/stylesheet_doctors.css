@@ -1,0 +1,97 @@
+/*about experts expanation style*/
+.doctor-exp {background-color: #f8f8f8b3; 
+             padding: 40px 20px;
+             max-width: 1200px; 
+             margin: 0 auto; 
+             text-align: center;}
+
+.doctor-exp h2 {font-family: 'Arial', sans-serif;
+                font-size: 32px;
+                color: #000000; 
+                margin-bottom: 20px;}
+  
+.doctor-exp p {font-family: 'Arial', sans-serif;  
+               font-size: 18px; 
+               color: #555; 
+               line-height: 1.6; 
+               max-width: 800px; 
+               margin: 0 auto;}
+
+/* General container styling*/
+.container1d, 
+.container2d,
+.container3d,
+.container4d,
+.container5d {background-color: #ffffff;
+              padding: 20px;
+              margin: 40px auto; }
+  
+.container1d h2,
+.container2d h2, 
+.container3d h2, 
+.container4d h2, 
+.container5d h2 {text-align: center;
+                 font-family: 'Arial', sans-serif;
+                 color:  #0b1d7a;
+                 font-size: 28px;
+                 margin-bottom: 30px;}
+
+  .doc-con1 {display: grid;
+             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+             gap: 60px; }
+  
+  .doctor-box {background-color: rgb(191, 224, 245);
+               border-radius: 10px;
+               overflow: hidden;
+               text-align: center;
+               padding: 20px;
+               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+               transition: transform 0.3s ease, box-shadow 0.3s ease;}
+  
+.doctor-box img { max-width: 100%;
+                  height: auto;
+                  border-radius: 50%;
+                  margin-bottom: 15px;}
+  
+.doctor-box:hover {transform: translateY(-10px);
+                   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);}
+  
+.doctor-box h4 {font-family: 'Arial', sans-serif;
+                font-size: 18px;
+                color: #007bff;
+                margin-bottom: 5px;}
+  
+.doctor-box p {font-family: 'Arial', sans-serif;
+                 font-size: 16px;
+                 color: #555;
+                 margin-bottom: 15px;}
+  
+/* Appointment button */
+.appointment-btn {display: inline-block;
+                    padding: 10px 20px;
+                    background-color: #007bff;
+                    color: #fff;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    font-family: 'Arial', sans-serif;
+                    transition: background-color 0.3s ease;}
+
+.appointment-btn:hover {background-color: #0056b3;}
+  
+/* Responsive styling */
+@media (max-width: 768px) {.doc-con1 {grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+                           .doctor-box {padding: 15px;}}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

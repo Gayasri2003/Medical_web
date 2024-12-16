@@ -1,0 +1,98 @@
+/* pharmacy text section styling */
+.pharmacy-text {background-color: #e7e7e7; 
+                padding: 50px 50px; 
+                border-radius: 10px; 
+                margin: 30px auto; 
+                max-width: 1000px; 
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+.pharmacy-text h2 {color:  #05437e;
+                   font-size: 28px; 
+                   margin-bottom: 40px; 
+                   text-align: center;}
+
+.pharmacy-text p {color: #000000; 
+                  font-size: 18px; 
+                  line-height: 1.6; 
+                  text-align: justify;
+                  margin-bottom: 0;}
+
+/*pharmacy form styling*/
+
+.pharmacy-form-container {max-width: 600px;
+                          margin: 0 auto;
+                          padding: 40px;
+                          background-color: #e7e2e2;
+                          border-radius: 10px;
+                          box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);}
+
+.pharmacy-form h2 {text-align: center;
+                   color: #333;
+                   margin-bottom: 20px;}
+
+.pharmacy-form .form-group {margin-bottom: 15px;}
+
+.pharmacy-form label {font-weight: bold;
+                      display: block;
+                      margin-bottom: 5px;
+                      color: #333;}
+
+.pharmacy-form input,
+.pharmacy-form select {width: 100%;
+                       padding: 10px;
+                       border: 1px solid #ccc;
+                       border-radius: 5px;
+                       font-size: 16px;}
+
+.pharmacy-form input[type="file"] {padding: 5px;}
+
+.pharmacy-form .submit-button {width: 100%;
+                               padding: 10px;
+                               background-color:  #085caa; 
+                               color: white;
+                               border: none;
+                               border-radius: 5px;
+                               font-size: 16px;
+                               cursor: pointer;
+                               transition: background-color 0.3s;}
+
+.pharmacy-form .submit-button:hover {background-color:  #007BFF;}
+
+/*pharmacy-video*/
+.pharmacy-video {text-align: center; 
+                 margin-top: 30px; 
+                 padding: 0 10px; }
+
+.pharmacy-video video {width: 100%; 
+                       max-width: 1300px; 
+                       border-radius: 10px; 
+                       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+
+/* Responsive Design */
+
+@media (max-width: 768px) {.pharmacy-text h2 {font-size: 24px;}
+                           .pharmacy-text p {font-size: 16px;}
+                           .pharmacy-form-container {padding: 15px;}
+                           .pharmacy-form h2 {font-size: 24px;}
+                           .pharmacy-form input,
+                           .pharmacy-form select {font-size: 14px;}
+                           .pharmacy-form .submit-button {font-size: 14px;
+                                                          padding: 8px;}
+                           .pharmacy-video {padding: 0 15px; }
+                           .pharmacy-video video {max-width: 100%;}}
+                    
+
+@media (max-width: 480px) {.pharmacy-text h2 {font-size: 20px;}
+                           .pharmacy-text p {font-size: 14px; }
+                           .pharmacy-text {padding: 30px 15px;}
+                           .pharmacy-form h2 {font-size: 20px;}
+                           .pharmacy-form input,
+                           .pharmacy-form select {font-size: 12px;}
+                           .pharmacy-form .submit-button {font-size: 12px;
+                                                          padding: 6px;}
+                           .pharmacy-video {padding: 0 10px;}
+                           .pharmacy-video video {max-width: 100%;}}
+                    
+                    
+
+

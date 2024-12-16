@@ -1,0 +1,155 @@
+/*about us text styling*/
+
+.about-text {background-color: #f9f9f9;
+             padding: 40px 20px; 
+             margin: 20px auto; 
+             max-width: 800px; 
+             border-radius: 8px; 
+             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+             text-align: center;}
+
+.about-text h2 {font-size: 2.5em; 
+                color: #043161; 
+                margin-bottom: 20px; }
+
+.about-text p {font-size: 1.2em;
+               line-height: 1.6; 
+               color: #333; 
+               margin: 0;}
+
+/* Hospital Branches Section */
+
+.hospital-branches {padding: 10px 20px;
+                    background-color: #f9f9f9;}
+  
+.hospital-branches h2 {text-align: center;
+                       font-size: 2.0em;
+                       color: #043161;
+                       margin-bottom: 40px;}
+
+.branch {margin-bottom: 40px;
+         border-bottom: 1px solid #ddd;
+         padding-bottom: 20px;}
+  
+.branch h3 {font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;}
+  
+.branch-details {display: flex;
+                 flex-wrap: wrap;
+                 gap: 20px;}
+  
+.branch-image img{max-width: 100%;
+                   height: 500px;
+                   border-radius: 8px;
+                   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+  
+.branch-description p {flex: 1;
+                     font-size: 1.1em;
+                     line-height: 1.6;}
+
+.branch-contact {border: 1px solid #ddd;
+                padding: 15px;
+                border-radius: 8px;
+                background-color: #fff;}
+                    
+.branch-contact h4 {font-size: 18px;
+                    color: #444;
+                     margin-bottom: 10px;}
+                    
+.branch-contact p {font-size: 16px;
+                   margin-bottom: 8px;
+                   color: #555;}
+                    
+.branch-contact p strong {color: #333;}
+                    
+.branch-contact a {color: #007bff;
+                   text-decoration: none;}
+                    
+.branch-contact a:hover {text-decoration: underline;}
+
+.branch-map iframe {border: none;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+  
+/*facilities styling*/
+
+.topic {text-align: center;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #f9f9f9;}
+    
+.topic h2 {font-size: 30px;
+           color: #08305a;
+           font-weight: bold;
+           margin-bottom: 10px;}
+    
+.facility-container {display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                    gap: 20px;
+                    padding: 20px;
+                    max-width: 1200px;
+                    margin: 0 auto;}
+                                                
+.facility {background-color: rgb(143, 237, 235);
+           border-radius: 10px;
+           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+           padding: 20px;
+           text-align: center;
+           transition: background-color 0.3s ease, transform 0.3s ease;}
+                                                
+.facility:hover {background-color: #1e5da0;
+                 transform: translateY(-10px);}
+                                                
+.facility i {font-size: 40px;
+             color: #007bff;
+             margin-bottom: 10px;
+             transition: color 0.3s ease;}
+                                                
+.facility:hover i {color: white;}
+                                                
+.facility h3 {font-size: 20px;
+              color: #045882;
+              transition: color 0.3s ease;}
+                                                
+.facility:hover h3 {color: white;}
+
+.hospital-summary {margin: 40px 20px;
+                   text-align: center;}
+
+.hospital-summary h2 {font-size: 2em;
+                      color: #08305a;
+                      margin-bottom: 20px;}
+
+/* Table Styling */
+table {width: 100%;
+       border-collapse: collapse;
+       margin: 0 auto;
+       max-width: 800px;
+       text-align: left;}
+
+table, th, td {border: 1px solid #ddd;}
+
+th, td {padding: 15px;}
+
+th {background-color: #36414d;
+    color: white;
+    font-weight: bold;}
+
+td {background-color: #757272;}
+
+tfoot td {text-align: center;
+          font-weight: bold;
+          background-color: #bbbaba;
+          padding: 20px;}
+
+/* Responsive Design */
+@media (max-width: 768px) {.about-text {padding: 30px 15px;}
+                           .about-text h2 {font-size: 2em;}
+                           .about-text p {font-size: 1em;}
+                           .topic h2{font-size: 26px;}}
+
+@media (max-width: 480px) {.about-text {padding: 20px 10px;}
+                           .about-text h2 {font-size: 1.8em;}
+                           .about-text p {font-size: 0.9em;}
+                           .topic h2{font-size: 22px;}}

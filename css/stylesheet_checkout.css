@@ -1,0 +1,92 @@
+
+h1, h2, h4 {
+    color:var(--dark-color);
+   text-align: center;
+  margin-top: 15px;}
+
+#order_details {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #d3d3d3;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+#orderForm {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+  }
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #939393;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #dad9d9;
+} 
+  
+input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+#confirm_order {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+#confirm_order button {
+    background-color: var(--hover-color);
+    color: var(--light-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+#confirm_order button:hover {
+    background-color:var(--live-sup-color);
+  }
+
+
+@media (max-width: 600px) {
+    table {
+        font-size: 12px;
+    }
+}

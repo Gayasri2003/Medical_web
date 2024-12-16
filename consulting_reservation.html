@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Hospitals</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/stylesheet_consultingr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#989ac2">
+    <meta name="theme-color" content="#ffffff">
+   
+</head>
+<body>
+    <!--sementic html-->
+    <header>
+      <nav class="nav-bar">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./images/Freelancer(5).png" alt="logo"></a>
+        </div>
+        <button class="toggle-button" id="toggle-button">☰</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="./index.html">Home</a></li>
+        <li><a href="./about_us.html">About Us</a></li>
+        <li><a href="./order.html">Order</a></li>
+        <li><a href="./checkout.html">Check Out</a></li>
+        <li><a href="./pharmacy.html">Pharmacy</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./doctors.html">Doctors</a></li>
+        <li><a href="./consulting_reservation.html">Consulting Reservation</a></li>
+        <li><a href="./contact_us.html">Contact Us</a></li>
+        </ul>
+        <div class="search-icon" >
+          <button id="search-toggle"><i class="fas fa-search"></i></button>
+              <form id="search-form" style="display: none;">
+                  <input type="text" placeholder="Search" id="search-input">
+              </form>
+              </div>
+        
+      </nav>
+    </header>
+  <hr>
+    <main>
+      <section>  <!--Specialist reservation form-->
+      <div class="reservation-form-container">
+        <h2>Specialist Reservation Form</h2>
+        <form class="reservation-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="age">Age:</label>
+              <input type="text" id="age" name="age" placeholder="Enter your age" required>
+            </div>
+
+            <div class="form-group">
+              <label for="gender">Gender:</label>
+              <div class="gender-options">
+                  <input type="radio" id="male" name="gender" value="male" required>
+                  <label for="male">Male</label>
+                  
+                  <input type="radio" id="female" name="gender" value="female" required>
+                  <label for="female">Female</label>
+                  
+                  <input type="radio" id="other" name="gender" value="other" required>
+                  <label for="other">Other</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="doctor-category">Doctor Category:</label>
+              <select id="doctor-category" name="doctor-category" required>
+                  <option value="">Select Category</option>
+                  <option value="Gynecologist">Gynecologist</option>
+                  <option value="neurologist">Neurologist</option>
+                  <option value="Dental Specialist">Dental Specialist</option>
+                  <option value="cardiologist">Cardiologist</option>
+                  <option value="cancer specialist">Cancer Specialist</option>
+              </select>
+          </div>
+          <div class="form-group">
+            <label for="doctor-name">Doctor Name:</label>
+            <select id="doctor-name" name="doctor-name" required>
+                <option value="">Select Doctor</option>
+                <option value="">Dr.(Mrs) Kathie L. Hullfish</option>
+                <option value="">Dr. Suzanne Holroyd</option>
+                <option value="">Dr. Richard D. Pearson</option>
+                <option value="">Dr. W. Kline Bolton</option>
+                <option value="">Dr (Miss)Jennifer Berman</option>
+                <option value="">Dr. John Kattwinkel</option>
+                <option value="">Dr. Raymond F. Morgan</option>
+                <option value="">Dr. Bruce Bateman</option>
+                <option value="">Dr. Kenneth J.</option>
+                <option value="">Dr.(Mrs) Mary E. Jensen</option>
+                <option value="">Dr.(Mrs)Emily Bacon</option>
+                <option value="">Dr. Mark E. Shaffrey</option>
+                <option value="">Dr.(Mrs)A. Flora Aldrich</option>
+                <option value="">Dr. Charles Daniel</option>
+                <option value="">Dr.(Miss)Brenda Banwell</option>
+            </select>
+        </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="payment-method">Payment Method:</label>
+              <div class="payment-options">
+                  <input type="radio" id="credit-card" name="payment-method" value="credit-card" required>
+                  <label for="credit-card">Credit Card</label>
+                  
+                  <input type="radio" id="debit-card" name="payment-method" value="debit-card" required>
+                  <label for="debit-card">Debit Card</label>
+
+                  <input type="radio" id="cash" name="payment-method" value="cash" required>
+                  <label for="cash">Cash</label>
+              </div>
+            </div>
+            <button type="submit" class="submit-button">Submit Reservation</button>
+        </form>
+    </div>
+    </section>
+
+    
+    <section>  <!--service registration form-->>
+      <div class="registration-form-container">
+        <h2>Registration Form for Our Services</h2>
+        <form class="registration-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="age">Age:</label>
+              <input type="text" id="age" name="age" placeholder="Enter your age" required>
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender:</label>
+              <div class="gender-options">
+                  <input type="radio" id="male" name="gender" value="male" required>
+                  <label for="male">Male</label>
+                  
+                  <input type="radio" id="female" name="gender" value="female" required>
+                  <label for="female">Female</label>
+                  
+                  <input type="radio" id="other" name="gender" value="other" required>
+                  <label for="other">Other</label>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+              <label for="service-category">Service Category:</label>
+              <select id="service-category" name="Service-category" required>
+                  <option value="">Outpatient Care(OPD)</option>
+                  <option value="">Intensive Care Unit(ICU)</option>
+                  <option value="">Eye Care </option>
+                  <option value="">Dental Clinic </option>
+                  <option value="">ENT Centre</option>
+                  <option value="">Dialysis Service </option>
+                  <option value="">Physiotherapy Center</option>
+                  <option value="">Cardiac Care</option>
+                  <option value="">Endoscopy Centre </option>
+                  <option value="">Mom and Baby Care</option>
+                  <option value="">Stroke Care </option>
+                  <option value="">Pregnancy Care</option>
+              </select>
+            <button type="submit" class="submit-button">Submit Registration</button>
+        </form>
+    </div>
+    </section>
+    </main>
+    <!--footer-->
+        <!--footer-->
+        <footer class="footer-d">
+          <div class="container2">
+              <div class="footer_col">
+                  <h4>Contact Us</h4>
+                  <ul class="contact_us">
+                      <li><i class="fas fa-map-marker-alt">Location</i><br> No.456, Main street, Kegalle.</li>
+                      <li> <i class="fas fa-phone">Phone:</i><br>  035-2244115 / 076-1122334</li>
+                      <li><i class="fas fa-envelope">Email</i><br> doctorhospitals@gmail.com</li>
+                  </ul>
+              </div>
+    
+              <div class="footer_col">
+                  <h4>Quick Links</h4>
+                  <ul class="quick_links">
+                      <li><a href="./index.html" class="menu-item active">Home</a></li>
+                      <li><a href="./about_us.html" class="menu-item">About Us</a></li>
+                      <li><a href="./order.html" class="menu-item">Order</a></li>
+                      <li><a href="./checkout.html" class="menu-item">Check Out</a></li>
+                      <li><a href="./pharmacy.html" class="menu-item">Pharmacy</a></li>
+                      <li><a href="./services.html" class="menu-item">Services</a></li>
+                      <li><a href="./doctors.html" class="menu-item">Doctors</a></li>
+                      <li><a href="./consulting_reservation.html" class="menu-item">Consulting Reservation</a></li>
+                      <li><a href="./contact_us.html" class="menu-item">Contact Us</a></li>
+                  </ul>
+              </div>
+    
+              <div class="footer_col">
+                  <h4>Follow Us</h4>
+                  <ul class="social_media">
+                      <li><a href="https://www.facebook.com/DoctorHospitals" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                      <li><a href="https://www.instagram.com/doctorhospitals" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                      <li><a href="https://www.twitter.com/DoctorHospitals" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                      <li><a href="https://www.youtube.com/DoctorHospitals" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+                  </ul>
+    
+                  <div class="live-chat-button">
+                      <button id="chatButton" aria-label="Open live chat"><i class="fas fa-comments"></i> Live Chat</button>
+                  </div>
+      
+                  <!-- The Chat Window -->
+                  <div id="liveChatWindow" class="live-chat-window" aria-hidden="true">
+                      <div class="chat-header">
+                          <h5>Live Support</h5>
+                          <button id="closeChatWindow" aria-label="Close chat">&times;</button>
+                      </div>
+                      <div class="chat-body">
+                          <p>How can we help you today?</p>
+                      </div>
+                      <div class="chat-footer">
+                          <input type="text" placeholder="Type a message..." aria-label="Type a message">
+                          <button id="sendMessage" aria-label="Send message">Send</button>
+                      </div>
+                  </div>
+              </div>
+      
+    
+              <div class="footer-bottom">
+                  <small>Copyright &copy; 2024 Doctor Hospitals (Private) Ltd. All rights reserved.</small>
+              </div>
+          </div>
+      </footer>
+      
+      <script src="./script.js"></script>
+    </body>
+    </html>

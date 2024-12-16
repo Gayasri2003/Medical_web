@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylesheet_order.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#989ac2">
+    <meta name="theme-color" content="#ffffff">
+    <title>Doctor Hospitals</title>
+</head>
+<body>
+    <!--sementic html-->
+  <header>
+    <nav class="nav-bar">
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./images/Freelancer(5).png" alt="logo"></a>
+      </div> 
+      <button class="toggle-button" id="toggle-button">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about_us.html">About Us</a></li>
+        <li><a href="./order.html">Order</a></li>
+        <li><a href="./checkout.html">Check Out</a></li>
+        <li><a href="./pharmacy.html">Pharmacy</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./doctors.html">Doctors</a></li>
+        <li><a href="./consulting_reservation.html">Consulting Reservation</a></li>
+        <li><a href="./contact_us.html">Contact Us</a></li>
+      </ul>
+      <div class="search-icon" >
+        <button id="search-toggle"><i class="fas fa-search"></i></button>
+            <form id="search-form" style="display: none;">
+                <input type="text" placeholder="Search" id="search-input">
+            </form>
+            </div>
+      
+    </nav>
+  </header>
+  <hr>
+    <header id="order_header">
+        <h1>Order your medicine here</h1>
+        <p>Welcome to the Medicine Order Page! Select from a wide range of medicines, specify quantities, and easily place your order.</p>
+    </header>
+   
+    <main>
+       <div id="medicine_container" class="medicine_container">
+        <div class="medicine-category">
+            <h3>Analgesics</h3>
+            <div class="medicine-item">
+                <img src="./images/aspirin.jpg" alt="Aspirin">
+                <label>Aspirin
+                <input type="number" id="Aspirin" class="Analgesics" min="0" value="0" data-price="1.00"></label>
+                <span>$ 1.00</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/codeine.jpeg" alt="Codeine">
+                <label>Codeine
+                <input type="number" id="Codeine" class="Analgesics" min="0" value="0" data-price="1.50"></label>
+                <span>$ 1.50</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/meperidine.webp" alt="Meperidine">
+                <label>Meperidine
+                <input type="number" id="Meperidine" class="Analgesics" min="0" value="0" data-price="2.00"></label>
+                <span>$ 2.00</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/morphine.jpg" alt="Morphine">
+                <label>Morphine
+                <input type="number" id="Morphine" class="Analgesics" min="0" value="0" data-price="1.80"></label>
+                <span>$ 1.80</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Oxycodone.jpg" alt="Oxycodone">
+                <label>Oxycodone
+                <input type="number" id="Oxycodone" class="Analgesics" min="0" value="0" data-price="2.50"></label>
+                <span>$ 2.50</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/paracetamol.jpg" alt="Paracetamol">
+                <label>Paracetamol
+                <input type="number" id="Paracetamol" class="Analgesics" min="0" value="0" data-price="2.20"></label>
+                <span>$ 2.20</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/pentazocine.webp" alt="Pentazocine">
+                <label>Pentazocine
+                <input type="number" id="Pentazocine" class="Analgesics" min="0" value="0" data-price="2.30"></label>
+                <span>$ 2.30</span>
+            </div>
+
+           
+        </div>
+
+        <div class="medicine-category">
+            <h3>Antibiotics</h3>
+            <div class="medicine-item">
+                <img src="./images/Amoxicillin.jpg" alt="Amoxicillin">
+                <label>Amoxicillin
+                <input type="number" id="Amoxicillin" class="Antibiotics" min="0" value="0" data-price="3.00"></label>
+                <span>$ 3.00</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Ampicillin.avif" alt="Ampicillin">
+                <label>Ampicillin
+                <input type="number" id="Ampicillin" class="Antibiotics" min="0" value="0" data-price="2.50"></label>
+                <span>$ 2.50</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/azithromycin.jpg" alt="Azithromycin">
+                <label>Azithromycin
+                <input type="number" id="Azithromycin" class="Antibiotics" min="0" value="0" data-price="2.80"></label>
+                <span>$ 2.80</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Cephalexin.jpeg" alt="Cephalexin">
+                <label>Cephalexin
+                <input type="number" id="Cephalexin" class="Antibiotics" min="0" value="0" data-price="1.90"></label>
+                <span>$ 1.90</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Oxacillin.jpeg" alt="Oxacillin">
+                <label>Oxacillin
+                <input type="number" id="Oxacillin" class="Antibiotics" min="0" value="0" data-price="3.20"></label>
+                <span>$ 3.20</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Penicillin.jpeg" alt="Penicillin">
+                <label>Penicillin
+                <input type="number" id="Penicillin" class="Antibiotics" min="0" value="0" data-price="1.10"></label>
+                <span>$ 1.10</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Sulfonamide.webp" alt="Sulfonamide">
+                <label>Sulfonamide
+                <input type="number" id="Sulfonamide" class="Antibiotics" min="0" value="0" data-price="2.10"></label>
+                <span>$ 2.10</span>
+            </div>
+        </div>
+
+        <div class="medicine-category">
+            <h3>Antidepressants</h3>
+            <div class="medicine-item">
+                <img src="./images/citalopram.jpg" alt="Citalopram">
+                <label>Citalopram
+                <input type="number" id="Citalopram" class="Antidepressants" min="0" value="0" data-price="1.00"></label>
+                <span>$ 1.00</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Escitalopram.jpg" alt="Escitalopram">
+                <label>Escitalopram
+                <input type="number" id="Escitalopram" class="Antidepressants" min="0" value="0" data-price="2.80"></label>
+                <span>$ 2.80</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Fluoxetine.webp" alt="Fluoxetine">
+                <label>Fluoxetine
+                <input type="number" id="Fluoxetine" class="Antidepressants" min="0" value="0" data-price="3.90"></label>
+                <span>$ 3.90</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Paroxetine.jpg" alt="Paroxetine">
+                <label>Paroxetine
+                <input type="number" id="Paroxetine" class="Antidepressants" min="0" value="0" data-price="4.70"></label>
+                <span>$ 4.70</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Sertraline.jpeg" alt="Sertraline">
+                <label>Sertraline
+                <input type="number" id="Sertraline" class="Antidepressants" min="0" value="0" data-price="1.50"></label>
+                <span>$ 1.50</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Vilazodone.jpeg" alt="Vilazodone">
+                <label>Vilazodone
+                <input type="number" id="Vilazodone" class="Antidepressants" min="0" value="0" data-price="2.20"></label>
+                <span>$ 2.20</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Vortioxetine.jpeg" alt="Vortioxetine">
+                <label>Vortioxetine
+                <input type="number" id="Vortioxetine" class="Antidepressants" min="0" value="0" data-price="3.20"></label>
+                <span>$ 3.20</span>
+            </div>
+        </div>
+   
+        <div class="medicine-category">
+            <h3>Antihistamines</h3>
+            <div class="medicine-item">
+                <img src="./images/Allegra.jpeg" alt="Allegra">
+                <label>Allegra
+                <input type="number" id="Allegra" class="Antihistamines" min="0" value="0" data-price="1.20"></label>
+                <span>$ 1.20</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Cetirizine.webp" alt="Cetirizine">
+                <label>Cetirizine
+                <input type="number" id="Cetirizine" class="Antihistamines" min="0" value="0" data-price="1.30"></label>
+                <span>$ 1.30</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Desloratadine.jpg" alt="Desloratadine">
+                <label>Desloratadine
+                <input type="number" id="Desloratadine" class="Antihistamines" min="0" value="0" data-price="2.40"></label>
+                <span>$ 2.40</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Diphenhydramine.jpeg" alt="Diphenhydramine">
+                <label>Diphenhydramine
+                <input type="number" id="Diphenhydramine" class="Antihistamines" min="0" value="0" data-price="3.10"></label>
+                <span>$ 3.10</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Hydroxyzine.jpeg" alt="Hydroxyzine">
+                <label>Hydroxyzine
+                <input type="number" id="Hydroxyzine" class="Antihistamines" min="0" value="0" data-price="2.80"></label>
+                <span>$ 2.80</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Loratadine.jpeg" alt="Loratadine">
+                <label>Loratadine
+                <input type="number" id="Loratadine" class="Antihistamines" min="0" value="0" data-price="3.90"></label>
+                <span>$ 3.90</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Promethazine.jpeg" alt="Promethazine">
+                <label>Promethazine
+                <input type="number" id="Promethazine" class="Antihistamines" min="0" value="0" data-price="4.70"></label>
+                <span>$ 4.70</span>
+            </div>
+        </div>
+
+        <div class="medicine-category">
+            <h3>Antihypertensives</h3>
+            <div class="medicine-item">
+                <img src="./images/Amlodipine.jpeg" alt="Amlodipine">
+                <label>Amlodipine
+                <input type="number" id="Amlodipine" class="Antihypertensives" min="0" value="0" data-price="1.50"></label>
+                <span>$ 1.50</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Clonidine.jpeg" alt="Clonidine">
+                <label>Clonidine
+                <input type="number" id="Clonidine" class="Antihypertensives" min="0" value="0" data-price="2.60"></label>
+                <span>$ 2.60</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Diuretics.jpeg" alt="Diuretics">
+                <label>Diuretics
+                <input type="number" id="Diuretics" class="Antihypertensives" min="0" value="0" data-price="3.40"></label>
+                <span>$ 3.40</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Hydralazine.jpeg" alt="Hydralazine">
+                <label>Hydralazine
+                <input type="number" id="Hydralazine" class="Antihypertensives" min="0" value="0" data-price="4.30"></label>
+                <span>$ 4.30</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Indapamide.jpg" alt="Indapamide">
+                <label>Indapamide
+                <input type="number" id="Indapamide" class="Antihypertensives" min="0" value="0" data-price="1.20"></label>
+                <span>$ 1.20</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Metoprolol.jpeg" alt="Metoprolol">
+                <label>Metoprolol
+                <input type="number" id="Metoprolol" class="Antihypertensives" min="0" value="0" data-price="3.70"></label>
+                <span>$ 3.70</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Prazosin.jpeg" alt="Prazosin">
+                <label>Prazosin
+                <input type="number" id="Prazosin" class="Antihypertensives" min="0" value="0" data-price="2.80"></label>
+                <span>$ 2.80</span>
+            </div>
+        </div>
+
+        <div class="medicine-category">
+            <h3>Antiemetic</h3>
+            <div class="medicine-item">
+                <img src="./images/Domperidone.jpg" alt="Domperidone">
+                <label>Domperidone
+                <input type="number" id="Domperidone" class="Antiemetic" min="0" value="0" data-price="1.50"></label>
+                <span>$ 1.50</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Droperidol.jpeg" alt="Droperidol">
+                <label>Droperidol
+                <input type="number" id="Droperidol" class="Antiemetic" min="0" value="0" data-price="4.60"></label>
+                <span>$ 4.60</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Granisetron.png" alt="Granisetron">
+                <label>Granisetron
+                <input type="number" id="Granisetron" class="Antiemetic" min="0" value="0" data-price="3.40"></label>
+                <span>$ 3.40</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Meclizine.jpg" alt="Meclizine">
+                <label>Meclizine
+                <input type="number" id="Meclizine" class="Antiemetic" min="0" value="0" data-price="1.30"></label>
+                <span>$ 1.30</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Motilium.jpeg" alt="Motilium">
+                <label>Motilium
+                <input type="number" id="Motilium" class="Antiemetic" min="0" value="0" data-price="3.20"></label>
+                <span>$ 3.20</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Olanzapine.jpg" alt="Olanzapine">
+                <label>Olanzapine
+                <input type="number" id="Olanzapine" class="Antiemetic" min="0" value="0" data-price="2.70"></label>
+                <span>$ 2.70</span>
+            </div>
+            <div class="medicine-item">
+                <img src="./images/Palonosetron.webp" alt="Palonosetron">
+                <label>Palonosetron
+                <input type="number" id="Palonosetron" class="Antiemetic" min="0" value="0" data-price="1.80"></label>
+                <span>$ 1.80</span>
+            </div>
+        </div>
+       </div>
+
+    <!--cart summary table-->
+       <section id="cart_summary" class="cart_summary">
+        <h3>Cart Summary</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Medicine</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    
+                </tr>
+            </thead>
+           <tbody id="cart-table-body">
+           </tbody> 
+           <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td id="total_price">$0.00</td>
+            </tr>
+           </tfoot>
+        </table>
+       </section>
+       
+       <!--button-->
+       <div class="buttons">
+
+        <button type="submit" id="buy-now" >Buy Now</button>
+
+        <button type="submit" id="add-to-favorites" >Add to Favorites</button>
+
+        <button type="submit" id="apply-favorites" >Apply Favorites</button>
+
+        <button type="button" id="clear-order">Clear Order</button>
+
+       </div>
+    </main>
+    
+    <!--footer-->
+    <footer class="footer-d">
+        <div class="container2">
+            <div class="footer_col">
+                <h4>Contact Us</h4>
+                <ul class="contact_us">
+                    <li><i class="fas fa-map-marker-alt">Location</i><br> No.456, Main street, Kegalle.</li>
+                    <li> <i class="fas fa-phone">Phone:</i><br>  035-2244115 / 076-1122334</li>
+                    <li><i class="fas fa-envelope">Email</i><br> doctorhospitals@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="footer_col">
+                <h4>Quick Links</h4>
+                <ul class="quick_links">
+                    <li><a href="./index.html" class="menu-item active">Home</a></li>
+                    <li><a href="./about_us.html" class="menu-item">About Us</a></li>
+                    <li><a href="./order.html" class="menu-item">Order</a></li>
+                    <li><a href="./checkout.html" class="menu-item">Check Out</a></li>
+                    <li><a href="./pharmacy.html" class="menu-item">Pharmacy</a></li>
+                    <li><a href="./services.html" class="menu-item">Services</a></li>
+                    <li><a href="./doctors.html" class="menu-item">Doctors</a></li>
+                    <li><a href="./consulting_reservation.html" class="menu-item">Consulting Reservation</a></li>
+                    <li><a href="./contact_us.html" class="menu-item">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_col">
+                <h4>Follow Us</h4>
+                <ul class="social_media">
+                    <li><a href="https://www.facebook.com/DoctorHospitals" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/doctorhospitals" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com/DoctorHospitals" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/DoctorHospitals" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+
+                <div class="live-chat-button">
+                    <button id="chatButton" aria-label="Open live chat"><i class="fas fa-comments"></i> Live Chat</button>
+                </div>
+    
+                <!-- The Chat Window -->
+                <div id="liveChatWindow" class="live-chat-window" aria-hidden="true">
+                    <div class="chat-header">
+                        <h5>Live Support</h5>
+                        <button id="closeChatWindow" aria-label="Close chat">&times;</button>
+                    </div>
+                    <div class="chat-body">
+                        <p>How can we help you today?</p>
+                    </div>
+                    <div class="chat-footer">
+                        <input type="text" placeholder="Type a message..." aria-label="Type a message">
+                        <button id="sendMessage" aria-label="Send message">Send</button>
+                    </div>
+                </div>
+            </div>
+    
+
+            <div class="footer-bottom">
+                <small>Copyright &copy; 2024 Doctor Hospitals (Private) Ltd. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./script.js"></script>
+    <script src="./order.js"></script>
+</body>
+</html>

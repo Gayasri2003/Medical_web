@@ -1,0 +1,297 @@
+:root {
+     --navbar-color: #05437e;
+     --secondary-color: #007BFF;
+     --accent-color: rgb(58, 170, 198);
+     --light-color: rgb(255, 255, 255);
+     --dark-color: rgb(9, 17, 29);
+     --border-color: rgb(6, 28, 58);
+     --hover-color: rgb(38, 105, 197);
+     --footer-bg-color: #000000;
+     --footer-border-color: rgb(9, 17, 29);
+     --live-sup-color: rgb(29, 58, 99);
+     --live-sup-hover-color: #277ccc;
+     --color1:#dddddd;
+     --transparent-color:rgba(5, 67, 126, 0.5);
+     --shadow-color:rgba(0, 0, 0, 0.2);}
+
+/*nav bar styles*/
+
+body {font-family: Arial, sans-serif; }
+   
+.nav-bar {width: 100%;
+          height: auto;
+          background-color:var(--navbar-color) ;
+          display: flex;
+          flex-direction: row;
+          justify-content:space-between ;
+          align-items: center;
+          padding: 0px 0px 2px 0px ;
+          border: 2px solid var(--border-color);
+          border-radius: 3px;}
+   
+.logo img {border-radius: 60%;
+           margin-left: 15px;
+           margin-top: 5px;
+           width: 80px;
+           height: auto;
+           transition: width 0.3s ease;}
+   
+.nav-links {display: flex;
+            list-style: none;
+            gap: 15px; }
+   
+.nav-links li a {text-decoration: none;
+                 color: var(--light-color);
+                 padding: 5px 10px;
+                 transition:width 0.3s ease;}
+   
+.search-icon {display: flex;
+              align-items: center;
+              position: relative;
+              margin-right: 20px;}
+   
+.search-icon form {display: flex;
+                   gap: 5px;
+                   align-items: center;
+                   background-color: var(--secondary-color);
+                   padding: 2px;
+                   border-radius: 5px;}
+   
+.search-icon input { padding: 5px;
+                     font-size: 14px;
+                     border: none;
+                     border-radius: 3px;
+                     outline: none;
+                     width: 80px;}
+   
+.search-icon button {
+     background-color: var(--secondary-color);
+     border: none;
+     color: var(--color1);
+     padding: 6px;
+     border-radius: 3px;
+     cursor: pointer;}
+   
+.search-icon button:hover {background-color: var(--hover-color);}
+   
+.toggle-button {display: none;
+                font-size: 24px;
+                background: none;
+                border: none;
+                color: var(--color1);
+                cursor: pointer;
+                position: absolute;
+                right: 120px;
+                top: 37px;}
+   
+/* Responsive styles for nav bar*/
+@media (max-width: 900px) {
+       .nav-links {
+       display: none;
+       flex-direction: column;
+       position: absolute;
+       top: 80px;
+       background-color:var(--transparent-color);
+       width: 100%;
+       padding: 20px 0;
+       z-index: 1000;}
+       .nav-links.active { display: flex;}
+       .toggle-button {display: block;}
+       .search-icon input {width: 60px;}}
+   
+@media (max-width: 500px) {
+     .logo img { width: 80px;}
+     .search-icon input { width: 50px;
+                          font-size: 12px;}
+     .toggle-button {font-size: 20px;
+                     right: 110px;}}
+
+/*footer styles*/
+
+footer{display: flex;
+       flex-direction: column;
+       height: 100vh;}
+
+ul{list-style-type: style type none;}
+
+.container2{background-color: var(--footer-bg-color) ;
+            color: var(--light-color);
+            padding-top:6px;
+            border: 3px solid var(--footer-border-color);
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: auto;
+            justify-content: space-around;
+            position: relative;}
+     
+.contact_us {list-style:none;
+             line-height: 20px;
+             font-size: 15px;}
+
+.contact_us i{font-size: 12px;}
+
+.social_media{list-style: none;
+              line-height: 35px;
+              display:flex;}
+          
+.social_media a{text-decoration: none;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 50%;}
+
+.social_media a i{font-size: 1.5em;
+                  color:var(--light-color);
+                  opacity:0.9 ;}   
+
+.social_media a i:hover{color: var(--hover-color);
+                        transition: 0.5s;}
+
+.quick_links{list-style: none;
+             line-height: 20px;
+             font-size: 15px;}
+
+.quick_links li a{display: block;
+               font-size: 15px;
+               text-decoration: none;
+               transition: 0.4s;
+               color: var(--light-color);}
+
+.quick_links a:hover{color: var(--accent-color);
+                    padding-right: 2px;}   
+
+.footer_col {width:30%;}      
+
+.footer_col h4{position: relative;
+               margin-bottom: 30px;
+               font-weight: 400;
+               font-size: 20px;
+               color: var(--light-color);
+               text-transform: capitalize;
+               justify-content: space-between;}
+
+.footer_col h4::before{position: absolute;
+                       left: 0;
+                       bottom: -6px;
+                       background-color: var(--navbar-color);
+                       height: 2px;
+                       width: 40px;}
+
+li:not(:last-child) {margin-bottom: 8px;}     
+
+li a{display: block;
+     font-size: 15px;
+     text-transform: capitalize;
+     transition: 0.4s;}
+
+li a:hover{color: var(--accent-color);
+           padding-right: 2px;}
+
+
+.live-chat-button {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     z-index: 9999;
+ }
+ 
+ #chatButton {
+     padding: 10px 15px;
+     font-size: 16px;
+     background-color: #0084ff;
+     color: white;
+     border: none;
+     border-radius: 50px;
+     cursor: pointer;
+ }
+ 
+ #chatButton:hover {
+     background-color: #0073e6;
+ }
+ 
+
+ .live-chat-window {
+     display: none; 
+     position: fixed;
+     bottom: 70px;
+     right: 20px;
+     width: 300px;
+     background-color: white;
+     border: 1px solid #ccc;
+     border-radius: 10px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     z-index: 9999;
+     padding: 10px;
+ }
+ 
+ .chat-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #0084ff;
+     color: white;
+     padding: 5px;
+     border-radius: 5px;
+ }
+ 
+ .chat-body {
+     padding: 10px;
+     height: 200px;
+     overflow-y: auto;
+     background-color: #f9f9f9;
+     margin-bottom: 10px;
+ }
+ 
+ .chat-footer {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ .chat-footer input {
+     width: 75%;
+     padding: 8px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+ }
+ 
+ .chat-footer button {
+     padding: 8px;
+     background-color: #0084ff;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+ 
+ .chat-footer button:hover {
+     background-color: #0073e6;
+ }
+ 
+
+.footer-bottom {background-color: var(--dark-color);
+                width: 100%; 
+                height: 70px; 
+                text-align: center;}
+
+.footer-bottom small {margin:5px 0;
+                      color: var(--light-color);
+                      font-size: medium;} 
+
+/* Responsive Design */
+
+@media (max-width: 768px) {.footer_col {width: 100%; 
+                                        margin-bottom: 20px;}
+                           .container2 {padding: 20px 5%; }
+                           .footer_col h4 {font-size: 18px;}
+                           li a {font-size: 14px;}
+                           .social_media a i {font-size: 1.2em;
+                                              padding: 8px;}
+                           .live-sup {padding: 8px;
+                                      right: 10px;
+                                      bottom: 10px;}}
+
+@media (max-width: 480px) {.container2 { padding: 10px 3%;}
+                           .footer_col h4 {font-size: 16px; }
+                            li a {font-size: 13px; }
+                           .social_media a i {font-size: 1em;}
+                           .live-sup i {font-size: 20px;}}
